@@ -1,5 +1,7 @@
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
+using System.IO;
+using System;
 
 namespace my_drives.Controllers
 {
@@ -10,10 +12,15 @@ namespace my_drives.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
-            return new string[] {
-                "drive c",
-                "drive d"
-            };
+            var drives = DriveInfo.GetDrives();
+            var driveNames = new List<string>();
+
+            foreach (var drive in drives)
+            {
+                driveNames.Add(drive.ToString());
+            }
+            
+            return driveNames;
         }
     }
 }

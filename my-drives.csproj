@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
+    <TargetLatestRunTimePatch>true</TargetLatestRunTimePatch>
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
     <RootNamespace>my_drives</RootNamespace>
   </PropertyGroup>
