@@ -9,7 +9,7 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/bin/Debug/netcoreapp2.2/my-drives.dll",
+            "program": "${workspaceFolder}/bin/Debug/netcoreapp2.2/MyDrives.dll",
             "args": [],
             "cwd": "${workspaceFolder}",
             "stopAtEntry": false,

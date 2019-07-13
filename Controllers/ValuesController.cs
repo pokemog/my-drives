@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace my_drives.Controllers
+namespace MyDrives.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
